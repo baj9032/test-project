@@ -7,5 +7,8 @@ module.exports = {
   },
   index2: function(req, res) {
     res.status(200).json({ message: 'index2' });
+  },
+  index3: function(req, res) {
+    res.status(200).json({ message: 'index3' });
   }
 };
