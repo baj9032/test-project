@@ -22,7 +22,8 @@
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
-    "docker:build": "docker build -t baj9032/test-project:latest ."
+    "docker:build": "docker build -t baj9032/test-project:latest .",
+    "docker:push": "docker push baj9032/test-project:latest"
   },
   "main": "app.js",
   "repository": {
