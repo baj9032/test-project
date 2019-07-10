@@ -24,7 +24,8 @@ module.exports.routes = {
 
   'GET /test1': { controller: 'test', action: 'index1' },
   'GET /test2': { controller: 'test', action: 'index2' },
-  'GET /test3': { controller: 'test', action: 'index3' }
+  'GET /test3': { controller: 'test', action: 'index3' },
+  'GET /test4': { controller: 'test', action: 'index4' }
   /***************************************************************************
    *                                                                          *
    * More custom routes here...                                               *
