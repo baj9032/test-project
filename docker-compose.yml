@@ -1,10 +1,8 @@
 version: '2.1'
 
 services:
-  test-project:
-    image: test-project
+  nodeApp:
+    image: baj9032/sails
     build: .
-    environment:
-      NODE_ENV: production
     ports:
-      - 3001:3001
+      - 80:3001
