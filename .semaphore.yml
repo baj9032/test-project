@@ -1,0 +1,9 @@
+version: v1.0
+name: test-project-semaphore-config
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+promotions:
+  - name: Pipeline 1
+    pipeline_file: p1.yml
