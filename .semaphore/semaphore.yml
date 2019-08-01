@@ -1,5 +1,5 @@
 version: v1.0
-name: test-project
+name: test-project-semaphore-config
 agent:
   machine:
     type: e1-standard-2
