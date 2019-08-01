@@ -17,4 +17,4 @@ blocks:
         - name: Docker
           commands:
             - npm run docker:build
-            - npm run docker:test
+            - npm run docker:test 
