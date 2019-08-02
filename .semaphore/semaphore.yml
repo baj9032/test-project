@@ -4,6 +4,7 @@ metadata:
   name: test-project
 spec:
   repository:
+    url: 'https://github.com/baj9032/test-project.git'
     run: true
     run_on:
       - branches
