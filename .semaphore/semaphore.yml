@@ -1,9 +1,3 @@
-version: v1.0
-name: test-project-semaphore-config
-agent:
-  machine:
-    type: e1-standard-2
-    os_image: ubuntu1804
 blocks:
   - name: Inspect Linux environment
     task:
