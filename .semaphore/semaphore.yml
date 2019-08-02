@@ -1,14 +1,31 @@
+# .semaphore/semaphore.yml
 blocks:
-  - name: Inspect Linux environment
+  - name: "Set things up"
     task:
       jobs:
-        - name: Print Envrinment variable
+        - name: Compile
           commands:
-            - echo $SEMAPHORE_PIPELINE_ID
-  - name: Setup
+            - checkout
+            - echo "Linting code"
+            - echo "Compiling code"
+  - name: "Unit tests"
     task:
       jobs:
-        - name: Docker
+        - name: Unit
           commands:
-            - npm run docker:build
-            - npm run docker:test
+            - checkout
+            - echo "Running unit tests"
+  - name: "E2E tests"
+    task:
+      prologue:
+        commands:
+          - checkout
+      jobs:
+        # these two jobs run in parallel, if "Unit tests" block passes:
+        # (also, comments are ok ;)
+        - name: "Integration tests"
+          commands:
+            - echo "Running integration tests"
+        - name: "Performance tests"
+          commands:
+            - echo "Running performance tests"
