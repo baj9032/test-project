@@ -1,10 +1,15 @@
+version: v1.0
+name: test-project
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
 blocks:
   - name: Inspect Linux environment
     task:
       jobs:
         - name: Print Envrinment variable
           commands:
-            - echo $SEMAPHORE_PIPELINE_ID
             - echo $SEMAPHORE_PIPELINE_ID
   - name: Setup
     task:
