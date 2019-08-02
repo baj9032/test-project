@@ -1,5 +1,13 @@
-version: v1.0
-name: test-project
+apiVersion: v1alpha
+kind: Project
+metadata:
+  name: test-project
+spec:
+  repository:
+    run: true
+    run_on:
+      - branches
+      - tags
 agent:
   machine:
     type: e1-standard-2
