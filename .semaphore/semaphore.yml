@@ -5,6 +5,7 @@ blocks:
         - name: Print Envrinment variable
           commands:
             - echo $SEMAPHORE_PIPELINE_ID
+            - echo $SEMAPHORE_PIPELINE_ID
   - name: Setup
     task:
       jobs:
