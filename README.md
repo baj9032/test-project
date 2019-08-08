@@ -1,4 +1,4 @@
-# test-project
+# Test-project
 
 a [Sails v1](https://sailsjs.com) application
 
